@@ -109,10 +109,15 @@ export default function KetintangMap() {
       ctx.stroke()
 
       // Draw area name
-      ctx.fillStyle = "#1f2937"
-      ctx.font = "12px system-ui"
-      ctx.textAlign = "center"
-      ctx.fillText(area.name, x, y + 45)
+      ctx.fillStyle = "#ffffff"; // Warna teks putih
+      ctx.font = "bold 12px system-ui";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle"; // Teks di tengah vertikal
+      ctx.shadowColor = "rgba(0,0,0,0.5)"; // Tambahkan bayangan agar kontras
+      ctx.shadowBlur = 4;
+      ctx.fillText(area.name, x, y);
+      ctx.shadowBlur = 0; // Reset bayangan setelahnya
+
     })
 
     // Draw user location if available
