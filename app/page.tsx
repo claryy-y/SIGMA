@@ -1,3 +1,17 @@
+import Head from 'next/head';
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <title>SIGMA</title>  {/* INI BAGIAN PENTING */}
+      </Head>
+      <main>
+        <h1>Selamat datang di Sistem Geospasial Motor Aman</h1>
+      </main>
+    </>
+  );
+}
 import MotorcycleTheftTable from "../motorcycle-theft-table"
 import LocationMonitor from "../components/location-monitor"
 import KetintangMap from "../components/ketintang-map"
